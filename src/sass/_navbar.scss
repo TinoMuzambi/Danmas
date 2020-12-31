@@ -9,14 +9,6 @@
 		justify-content: flex-start;
 	}
 
-	.bars {
-		display: none;
-
-		&.active {
-			display: block;
-		}
-	}
-
 	.list {
 		display: flex;
 		justify-content: space-between;
