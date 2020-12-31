@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function Contact() {
-	const handleSubmit = () => {
-		console.log("Email!");
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		const template_params = {
+			reply_to: email,
+			from_name: name,
+			message: message,
+		};
+		const service_id = "service_tebm2p4";
+		const template_id = "template_tsoy1fo";
+		window.emailjs
+			.send(service_id, template_id, template_params)
+			.then((res) => {
+				alert("Thank you for your query! We will be in touch.");
+				setName("");
+				setEmail("");
+				setMessage("");
+			})
+			.catch((err) => alert("Something went wrong, please try again."));
 	};
 
 	return (
@@ -11,11 +31,25 @@ function Contact() {
 			<div className="after"></div>
 			<img src="/assets/phone.jpg" alt="phone" className="backdrop" />
 			<div className="content">
-				<form action={handleSubmit} className="contact-form">
+				<form onSubmit={handleSubmit} className="contact-form" id="form">
 					<label htmlFor="name">Name (required)</label>
-					<input type="text" name="name" id="name" required />
+					<input
+						type="text"
+						name="name"
+						id="name"
+						required
+						value={name}
+						onChange={(e) => setName(e.target.value)}
+					/>
 					<label htmlFor="email">Email (required)</label>
-					<input type="email" name="email" id="email" required />
+					<input
+						type="email"
+						name="email"
+						id="email"
+						required
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
+					/>
 					<label htmlFor="message">Message</label>
 					<textarea
 						name="message"
@@ -23,6 +57,8 @@ function Contact() {
 						cols="30"
 						rows="10"
 						required
+						value={message}
+						onChange={(e) => setMessage(e.target.value)}
 					></textarea>
 					<button type="submit">Contact us</button>
 				</form>
