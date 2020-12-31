@@ -1,17 +1,18 @@
 .contact {
 	position: relative;
 
+	@include mq(768px) {
+		background: gray;
+		padding: 1rem 0;
+	}
+
 	.backdrop {
 		height: 100vh;
 		width: 100%;
 		object-fit: cover;
 
 		@include mq(768px) {
-			height: 150vh;
-		}
-
-		@include mq(500px) {
-			height: 200vh;
+			display: none;
 		}
 	}
 
@@ -24,6 +25,8 @@
 
 		@include mq(768px) {
 			flex-direction: column;
+			position: static;
+			margin: 2rem;
 			left: 10%;
 		}
 
