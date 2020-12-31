@@ -28,10 +28,10 @@ function Contact() {
 				</form>
 				<div className="details">
 					<div className="socials">
-						<FaFacebook />
-						<FaLinkedin />
-						<FaTwitter />
-						<FaInstagram />
+						<FaFacebook className="icon" />
+						<FaLinkedin className="icon" />
+						<FaTwitter className="icon" />
+						<FaInstagram className="icon" />
 					</div>
 					<a href="mailto:danmasara@gmail.com" className="email">
 						danmasara@gmail.com

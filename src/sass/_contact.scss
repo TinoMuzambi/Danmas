@@ -46,5 +46,33 @@
 				border-radius: 10000px;
 			}
 		}
+
+		.details {
+			.socials {
+				display: flex;
+				gap: 1rem;
+				font-size: 4rem;
+
+				.icon {
+					background: coral;
+					padding: 1rem;
+					border-radius: 50%;
+					color: white;
+
+					&:nth-child(1) {
+						background: rgb(23, 120, 242);
+					}
+					&:nth-child(2) {
+						background: rgb(13, 102, 194);
+					}
+					&:nth-child(3) {
+						background: rgb(29, 161, 242);
+					}
+					&:nth-child(4) {
+						background: rgb(240, 0, 117);
+					}
+				}
+			}
+		}
 	}
 }
