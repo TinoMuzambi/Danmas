@@ -28,10 +28,38 @@ function Contact() {
 				</form>
 				<div className="details">
 					<div className="socials">
-						<FaFacebook className="icon" />
-						<FaLinkedin className="icon" />
-						<FaTwitter className="icon" />
-						<FaInstagram className="icon" />
+						<a
+							href="https://facebook.com"
+							className="link"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FaFacebook className="icon" />
+						</a>
+						<a
+							href="https://linkedin.com"
+							className="link"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FaLinkedin className="icon" />
+						</a>
+						<a
+							href="https://twitter.com"
+							className="link"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FaTwitter className="icon" />
+						</a>
+						<a
+							href="https://instagram.com"
+							className="link"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<FaInstagram className="icon" />
+						</a>
 					</div>
 					<div className="address">
 						<a href="mailto:danmasara@gmail.com" className="email">

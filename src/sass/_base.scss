@@ -23,3 +23,12 @@ $primary-colour: rgb(62, 105, 220);
 		@content;
 	}
 }
+
+.footer {
+	@include flexCenter;
+	margin: 1rem;
+
+	.text {
+		color: gray;
+	}
+}
