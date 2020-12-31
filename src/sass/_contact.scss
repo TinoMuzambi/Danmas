@@ -73,6 +73,18 @@
 					}
 				}
 			}
+
+			.address {
+				margin-top: 2rem;
+				display: flex;
+				flex-direction: column;
+				color: white;
+				gap: 0.5rem;
+
+				a {
+					color: white;
+				}
+			}
 		}
 	}
 }

@@ -33,15 +33,16 @@ function Contact() {
 						<FaTwitter className="icon" />
 						<FaInstagram className="icon" />
 					</div>
-					<a href="mailto:danmasara@gmail.com" className="email">
-						danmasara@gmail.com
-					</a>
-					<a href="tel:+277499889847">+277499889847</a>
-					<p className="text">25, 7th Avenue</p>
-					<p className="text">Belgravia</p>
-					<p className="text">Belgravia</p>
-					<p className="text">Cape Town, Western Cape 7764</p>
-					<p className="text">South Africa</p>
+					<div className="address">
+						<a href="mailto:danmasara@gmail.com" className="email">
+							danmasara@gmail.com
+						</a>
+						<a href="tel:+277499889847">+277499889847</a>
+						<p className="text">25, 7th Avenue</p>
+						<p className="text">Belgravia</p>
+						<p className="text">Cape Town, Western Cape 7764</p>
+						<p className="text">South Africa</p>
+					</div>
 				</div>
 			</div>
 		</div>
