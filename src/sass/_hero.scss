@@ -1,0 +1,16 @@
+.header {
+	background: rgb(243, 243, 243);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	.title {
+		color: $primary-colour;
+		font-size: 4rem;
+		margin: 3rem 3rem 0rem 3rem;
+	}
+
+	.subtitle {
+		padding: 3rem;
+	}
+}
