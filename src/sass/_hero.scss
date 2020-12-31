@@ -7,10 +7,28 @@
 	.title {
 		color: $primary-colour;
 		font-size: 4rem;
-		margin: 3rem 3rem 0rem 3rem;
+		margin: 3rem 0rem 0rem 15rem;
 	}
 
 	.subtitle {
-		padding: 3rem;
+		padding: 3rem 15rem;
+	}
+}
+
+.hero-img {
+	.image {
+		object-fit: cover;
+		height: 80vh;
+		width: 100%;
+		position: relative;
+	}
+
+	.text {
+		position: absolute;
+		top: 80%;
+		left: 15%;
+		color: white;
+		font-size: 2rem;
+		font-weight: bold;
 	}
 }
