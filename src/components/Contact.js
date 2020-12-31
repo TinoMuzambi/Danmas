@@ -28,8 +28,7 @@ function Contact() {
 
 	return (
 		<div className="contact">
-			<div className="after"></div>
-			<img src="/assets/phone.jpg" alt="phone" className="backdrop" />
+			<img src="/assets/phone-dark.jpg" alt="phone" className="backdrop" />
 			<div className="content">
 				<form onSubmit={handleSubmit} className="contact-form" id="form">
 					<label htmlFor="name">Name (required)</label>
