@@ -1,0 +1,24 @@
+$font: "Open Sans", sans-serif;
+$primary-colour: rgb(62, 105, 220);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+%flex {
+	display: flex;
+	align-items: center;
+}
+
+@mixin flexCenter {
+	@extend %flex;
+	justify-content: center;
+}
+
+@mixin mq($size) {
+	@media only screen and (max-width: $size) {
+		@content;
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACGA,AAAA,CAAC,AAAC,CACD,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACtB",
+    "sources": [
+        "../sass/App.scss",
+        "../sass/_base.scss"
+    ],
+    "names": [],
+    "file": "App.min.css"
+}
