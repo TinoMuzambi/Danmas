@@ -31,7 +31,9 @@ function Contact() {
 			<img src="/assets/phone-dark.jpg" alt="phone" className="backdrop" />
 			<div className="content">
 				<form onSubmit={handleSubmit} className="contact-form" id="form">
-					<label htmlFor="name">Name (required)</label>
+					<label className="label" htmlFor="name">
+						Name (required)
+					</label>
 					<input
 						type="text"
 						name="name"
@@ -40,7 +42,9 @@ function Contact() {
 						value={name}
 						onChange={(e) => setName(e.target.value)}
 					/>
-					<label htmlFor="email">Email (required)</label>
+					<label className="label" htmlFor="email">
+						Email (required)
+					</label>
 					<input
 						type="email"
 						name="email"
@@ -49,7 +53,9 @@ function Contact() {
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 					/>
-					<label htmlFor="message">Message</label>
+					<label className="label" htmlFor="message">
+						Message
+					</label>
 					<textarea
 						name="message"
 						id="message"
