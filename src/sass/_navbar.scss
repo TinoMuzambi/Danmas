@@ -21,9 +21,12 @@
 			margin: 0 1rem;
 			font-weight: bold;
 			cursor: pointer;
+			border-bottom: solid 2px transparent;
 
 			&:focus,
-			&:active {
+			&:active,
+			&:hover {
+				color: $primary-colour;
 				border-bottom: solid 2px $primary-colour;
 			}
 		}
