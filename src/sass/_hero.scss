@@ -8,10 +8,20 @@
 		color: $primary-colour;
 		font-size: 4rem;
 		margin: 3rem 0rem 0rem 15rem;
+
+		@include mq(768px) {
+			margin: 3rem 1rem;
+			font-size: 1rem;
+		}
 	}
 
 	.subtitle {
 		padding: 3rem 15rem;
+
+		@include mq(768px) {
+			padding: 0rem 0 3rem 1rem;
+			font-size: 1rem;
+		}
 	}
 }
 
@@ -21,6 +31,10 @@
 		height: 80vh;
 		width: 100%;
 		position: relative;
+
+		@include mq(768px) {
+			filter: blur(8px);
+		}
 	}
 
 	.text {
@@ -30,5 +44,11 @@
 		color: white;
 		font-size: 2rem;
 		font-weight: bold;
+
+		@include mq(768px) {
+			top: 70%;
+			left: 5%;
+			font-size: 1rem;
+		}
 	}
 }

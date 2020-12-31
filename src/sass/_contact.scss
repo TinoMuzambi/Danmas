@@ -2,14 +2,14 @@
 	position: relative;
 	.after {
 		background: black;
-		height: 100vh;
+		height: 200vh;
 		width: 100%;
 		position: absolute;
 		opacity: 70%;
 	}
 
 	.backdrop {
-		height: 100vh;
+		height: 200vh;
 		width: 100%;
 		object-fit: cover;
 	}
@@ -21,11 +21,20 @@
 		display: flex;
 		gap: 5rem;
 
+		@include mq(768px) {
+			flex-direction: column;
+			left: 10%;
+		}
+
 		.contact-form {
 			display: flex;
 			flex-direction: column;
 			color: white;
 			width: 30vw;
+
+			@include mq(768px) {
+				width: 80vw;
+			}
 
 			input,
 			textarea {
@@ -33,6 +42,11 @@
 				padding: 1rem;
 				outline: none;
 				border: 2px solid transparent;
+
+				@include mq(768px) {
+					font-size: 1rem;
+					padding: 0.5rem;
+				}
 
 				&:focus,
 				&:active,
@@ -67,6 +81,10 @@
 				display: flex;
 				gap: 1rem;
 				font-size: 4rem;
+
+				@include mq(768px) {
+					font-size: 1rem;
+				}
 
 				.link {
 					display: flex;

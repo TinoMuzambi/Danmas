@@ -31,4 +31,8 @@ $primary-colour: rgb(62, 105, 220);
 	.text {
 		color: gray;
 	}
+
+	@include mq(768px) {
+		font-size: 0.7rem;
+	}
 }

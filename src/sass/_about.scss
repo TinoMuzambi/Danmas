@@ -3,11 +3,22 @@
 		font-size: 3rem;
 		margin: 3rem 0rem 0rem 15rem;
 		font-weight: 900;
+
+		@include mq(768px) {
+			margin: 3rem 1rem;
+			font-size: 1rem;
+		}
 	}
 
 	.list-wrapper {
 		margin-left: 15rem;
 		color: gray;
+
+		@include mq(768px) {
+			margin: 3rem -0.5rem;
+			width: 95%;
+			// font-size: 1rem;
+		}
 
 		.list {
 			padding-left: 3rem;

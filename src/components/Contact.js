@@ -101,7 +101,7 @@ function Contact() {
 						<a href="mailto:danmasara@gmail.com" className="email">
 							danmasara@gmail.com
 						</a>
-						<a href="tel:+277499889847">+277499889847</a>
+						<a href="tel:+27749989847">+27 74 998 9847</a>
 						<p className="text">25, 7th Avenue</p>
 						<p className="text">Belgravia</p>
 						<p className="text">Cape Town, Western Cape 7764</p>
