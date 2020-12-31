@@ -8,7 +8,9 @@ function Contact() {
 
 	return (
 		<div className="contact">
-			<div className="form">
+			<div className="after"></div>
+			<img src="/assets/phone.jpg" alt="phone" className="backdrop" />
+			<div className="content">
 				<form action={handleSubmit} className="contact-form">
 					<label htmlFor="name">Name (required)</label>
 					<input type="text" name="name" id="name" required />
@@ -24,23 +26,23 @@ function Contact() {
 					></textarea>
 					<button type="submit">Contact us</button>
 				</form>
-			</div>
-			<div className="details">
-				<div className="socials">
-					<FaFacebook />
-					<FaLinkedin />
-					<FaTwitter />
-					<FaInstagram />
+				<div className="details">
+					<div className="socials">
+						<FaFacebook />
+						<FaLinkedin />
+						<FaTwitter />
+						<FaInstagram />
+					</div>
+					<a href="mailto:danmasara@gmail.com" className="email">
+						danmasara@gmail.com
+					</a>
+					<a href="tel:+277499889847">+277499889847</a>
+					<p className="text">25, 7th Avenue</p>
+					<p className="text">Belgravia</p>
+					<p className="text">Belgravia</p>
+					<p className="text">Cape Town, Western Cape 7764</p>
+					<p className="text">South Africa</p>
 				</div>
-				<a href="mailto:danmasara@gmail.com" className="email">
-					danmasara@gmail.com
-				</a>
-				<a href="tel:+277499889847">+277499889847</a>
-				<p className="text">25, 7th Avenue</p>
-				<p className="text">Belgravia</p>
-				<p className="text">Belgravia</p>
-				<p className="text">Cape Town, Western Cape 7764</p>
-				<p className="text">South Africa</p>
 			</div>
 		</div>
 	);
