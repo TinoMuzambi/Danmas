@@ -1,0 +1,31 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 1rem;
+
+	.bars {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	.list {
+		display: flex;
+		justify-content: space-between;
+		list-style-type: none;
+
+		.link {
+			margin: 0 1rem;
+			font-weight: bold;
+			cursor: pointer;
+
+			&:focus,
+			&:active {
+				border-bottom: solid 2px $primary-colour;
+			}
+		}
+	}
+}

@@ -21,7 +21,7 @@ class App extends React.Component {
 				</section>
 				<section
 					ref={(section) => {
-						this.home = section;
+						this.about = section;
 					}}
 				>
 					<About />
