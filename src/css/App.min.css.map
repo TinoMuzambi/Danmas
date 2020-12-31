@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "ACGA,AAAA,CAAC,AAAC,CACD,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACtB",
+    "mappings": "ACGA,AAAA,CAAC,AAAC,CACD,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACtB,WAAW,CAPL,WAAW,CAAE,UAAU,CAQ7B",
     "sources": [
         "../sass/App.scss",
         "../sass/_base.scss"
