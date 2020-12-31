@@ -1,0 +1,25 @@
+.about {
+	.title {
+		font-size: 3rem;
+		margin: 3rem 0rem 0rem 15rem;
+		font-weight: 900;
+	}
+
+	.list-wrapper {
+		margin-left: 15rem;
+		color: gray;
+
+		.list {
+			padding-left: 3rem;
+
+			.item {
+				margin-bottom: 2rem;
+				list-style-type: disc;
+			}
+
+			.inner-item {
+				list-style-type: disc;
+			}
+		}
+	}
+}
